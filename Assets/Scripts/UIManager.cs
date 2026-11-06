@@ -29,15 +29,15 @@ public class UIManager : MonoBehaviour
 
     private void UpdateScoreUI()
     {
-        livesText.text = "Lives: " + lives;
+        scoreText.text = "Score: " + score;
     }
 
     private void UpdateLivesUI()
     {
-        scoreText.text = "Score: " + score;
+        livesText.text = "Lives: " + lives;
     }
 
-    private void AddScore(int points)
+    public void AddScore(int points)
     {
         score += points;
         UpdateScoreUI();
